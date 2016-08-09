@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aptech.bruno.tom_cua_ca.MainActivity"
+    android:background="#fdf50a"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phinh"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textColor="#070101"
+            android:textSize="35dp"
+            android:id="@+id/txtTien"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00:00:00"
+            android:id="@+id/txtTime"
+            android:textSize="35dp"
+
+            android:textColor="#ef1010" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="216dp"
+            android:id="@+id/gridBanCo"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_marginLeft="50dp"
+            android:id="@+id/xingau1"
+            android:src="@drawable/hinhdong"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/xingau2"
+            android:src="@drawable/hinhdong"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/xingau3"
+
+            android:src="@drawable/hinhdong"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lắc Xí Ngầu "
+        android:id="@+id/btnLac"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
